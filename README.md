@@ -1,6 +1,6 @@
 # WhatsApp Chatbot Backend Simulation (Spring Boot)
 
-## 📌 Project Overview
+##  Project Overview
 This project simulates a WhatsApp chatbot backend using Spring Boot.
 
 **Features:**
@@ -9,7 +9,7 @@ This project simulates a WhatsApp chatbot backend using Spring Boot.
 - Sends predefined replies
 - Logs all messages with timestamps
 
-## 🚀 Quick Start
+##  Quick Start
 
 1. **Prerequisites:**
    ```
@@ -31,26 +31,26 @@ This project simulates a WhatsApp chatbot backend using Spring Boot.
    -d '{"message": "hi"}'
    ```
 
-## 🧪 Test Cases
+##  Test Cases
 
 | Input | Expected Output |
 |-------|-----------------|
-| `{"message": "hi"}` | `Hello 👋 How can I help you?` |
-| `{"message": "bye"}` | `Goodbye 👋 Have a great day!` |
+| `{"message": "hi"}` | `Hello  How can I help you?` |
+| `{"message": "bye"}` | `Goodbye  Have a great day!` |
 | `{"message": "help"}` | `I can respond to: hi, hello, bye, goodbye, help` |
 
-## 📸 Console Output Example
+##  Console Output Example
 ```
 [2024-10-01 10:30:15] Received: hi
-[2024-10-01 10:30:15] Reply sent: Hello 👋 How can I help you?
+[2024-10-01 10:30:15] Reply sent: Hello  How can I help you?
 ```
 
-## 🎯 Architecture
+##  Architecture
 ```
 Client (Postman) → POST /webhook → WebhookController → ChatService → Reply + Log
 ```
 
-## 🛠️ Project Structure
+##  Project Structure
 ```
 whatsapp-chatbot/
 ├── pom.xml
@@ -63,19 +63,19 @@ whatsapp-chatbot/
 └── src/main/resources/application.properties
 ```
 
-## 🚀 Bonus: Deploy on Render
+##  Bonus: Deploy on Render
 1. Push to GitHub
 2. Create Web Service on Render
 3. Build Command: `mvn clean install`
 4. Start Command: `java -jar target/chatbot-0.0.1-SNAPSHOT.jar`
 
-## ✨ Advanced Features (Future)
+##  Advanced Features (Future)
 - Database storage (H2/PostgreSQL)
 - AI integration (OpenAI)
 - Session management
 - Real WhatsApp Business API
 
-## 🎓 Key Spring Boot Concepts
+##  Key Spring Boot Concepts
 - `@RestController` - REST API endpoints
 - `@RequestBody` - JSON deserialization  
 - `@Autowired` - Dependency Injection
